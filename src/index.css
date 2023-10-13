@@ -1,0 +1,19 @@
+/* global styles */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+

@@ -1,0 +1,360 @@
+body {
+  background-color: rgb(29, 32, 47) !important;
+}
+
+h2 {
+  margin-top: 15px !important;
+  margin-bottom: 30px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+p {
+  color: white;
+}
+
+/* header styles */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #002000;
+  border-bottom: 2px solid green;
+}
+
+.header .nav-item {
+  margin-right: 15%;
+}
+
+.header .navbar-nav {
+  margin-left: auto;
+  margin-right: 10% !important;
+}
+
+.header .nav-link {
+  color: green !important;
+  margin-left: 5%;
+  white-space: nowrap;
+}
+
+.header .navbar-brand:visited {
+  color: green !important;
+}
+
+.header .nav-link:visited {
+  color: green !important;
+}
+
+.header .nav-link:hover {
+  color: turquoise !important;
+}
+
+.header .navbar-brand {
+  margin-right: auto;
+  margin-left: 3%;
+  color: green;
+}
+
+.header .navbar-brand:hover {
+  color: turquoise !important;
+}
+
+.header .navbar-toggler {
+  margin-right: 3% !important;
+}
+
+/* about styles */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+
+.about-content a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(19, 173, 19);
+}
+
+.about-content a:hover {
+  color: turquoise;
+}
+
+.about-content p {
+  padding: 25px;
+}
+
+.p1 {
+  border: 1.5px solid turquoise;
+  outline: 2px solid green;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.p2 {
+  border: 1.5px solid turquoise;
+  outline: 2px solid green;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.p3 {
+  border: 1.5px solid turquoise;
+  outline: 2px solid green;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.img-fluid {
+  border: 1.5px solid turquoise;
+  outline: 2px solid green;
+  border-radius: 5px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* portfolio styles */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.big-project {
+  grid-column: span 2;
+  border: none !important;
+  box-shadow: none;
+  width: 720px;
+}
+
+.small-project {
+  border: none !important;
+  box-shadow: none;
+  width: 350px;
+}
+
+/* For screens larger than a certain size, make it a 2-column grid */
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.big-project .card {
+  width: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body .card-title {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px !important;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.button-container .btn-primary {
+  background-color: rgb(29, 32, 47) !important;
+  outline: 2px solid turquoise !important;
+  margin-right: 5% !important;
+  white-space: nowrap;
+}
+
+.button-container .btn-secondary {
+  background-color: rgb(29, 32, 47) !important;
+  outline: 2px solid green !important;
+  margin-left: 5% !important;
+  white-space: nowrap;
+}
+
+.button-container .btn-primary:hover {
+  color: turquoise;
+  background-color: rgb(72, 76, 94) !important;
+  outline: 2px solid rgb(134, 255, 243) !important;
+}
+
+.button-container .btn-secondary:hover {
+  color: rgb(18, 180, 18);
+  background-color: rgb(72, 76, 94) !important;
+  outline: 2px solid rgb(18, 180, 18) !important;
+}
+
+/* contact styles */
+
+.content p {
+  margin: 5px;
+}
+
+.message {
+  margin-top: 5px;
+}
+
+.custom-button {
+  margin-top: 40px;
+  background-color: rgb(29, 32, 47) !important;
+  outline: 2px solid turquoise !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-button:hover {
+  color: turquoise !important;
+  background-color: rgb(72, 76, 94) !important;
+  outline: 2px solid rgb(134, 255, 243) !important;
+}
+
+.alert-box {
+  position: absolute;
+  top: 15%;
+  color: white;
+  background-color: rgb(72, 76, 94);
+  border-radius: 5px;
+  border: 1.5px solid turquoise;
+  outline: 2px solid green;
+  padding: 10px;
+}
+
+/* footer styles */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  position: relative;
+  background-color: rgb(0, 32, 0);
+  border-top: 2px solid green;
+}
+
+.footer .navbar-nav {
+  margin-right: auto;
+  margin-left: 3%;
+}
+
+.footer .nav-link {
+  color: green;
+}
+
+.footer .nav-link:visited {
+  color: green !important;
+}
+
+.footer .nav-link:hover {
+  color: turquoise !important;
+}
+
+.footer .navbar-text {
+  margin-left: auto;
+  margin-right: 4%;
+  color: green !important;
+}
+
+@media (max-width: 768px) {
+  .footer .navbar-text {
+    display: none !important;
+  }
+
+  .footer .navbar-expand {
+    justify-content: center !important;
+    
+  }
+
+  .footer .nav-link {
+    margin: 0 10px;
+  }
+
+  .footer .navbar-nav {
+    text-align: center;
+    justify-content: center !important;
+    margin: 0;
+  }
+
+  .content p {
+    margin: 5px 20px;
+  }
+  
+  .contact-form {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .project-grid {
+    display: block;
+    padding: 20px;
+  }
+
+  .project-grid .small-project {
+    /* Adjust the width as needed */
+    width: 100%;
+    margin-bottom: 20px; /* Add spacing between projects */
+  }
+
+  .project-grid .big-project {
+    /* Adjust the width as needed */
+    width: 100%;
+    margin-bottom: 20px; /* Add spacing between projects */
+  }
+
+  .button-container .btn-primary {
+    margin-right: 1% !important;
+  }
+  
+  .button-container .btn-secondary {
+    margin-left: 1% !important;
+  }
+
+  .about-content {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .navbar-nav {
+    text-align: center;
+  }
+
+  .header .nav-item {
+    justify-content: center !important;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .nav-link {
+    justify-content: center !important;
+    margin-left: 10% !important;
+  }
+}
